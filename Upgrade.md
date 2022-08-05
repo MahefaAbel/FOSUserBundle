@@ -14,7 +14,7 @@ extension points of the bundle (mostly through events) is preferred.
 
 ## 2.0.0-alpha3 to 2.0.0-beta1
 
-Methods and properties removed from `FOS\UserBundle\Model\User`
+Methods and properties removed from `Mahefa\FOS\UserBundle\Model\User`
 
 - `$locked`
 - `$expired` and `$expiredAt`
@@ -269,7 +269,7 @@ user object directly.
 
 ### Groups
 
-The `FOS\UserBundle\Model\GroupableInterface` interface now expects the `getGroups`
+The `Mahefa\FOS\UserBundle\Model\GroupableInterface` interface now expects the `getGroups`
 method to return a Traversable instead of expecting a Doctrine Collection.
 Doctrine-based implementation are unchanged but the Propel implementation
 now returns the PropelCollection instead of wrapping it.
@@ -279,7 +279,7 @@ now returns the PropelCollection instead of wrapping it.
 The different Doctrine-based manager classes are deprecated and will be removed
 in 2.0 in favor of the common implementation. If you were extending the UserManager
 class for a Doctrine implementation, you need to change the parent class
-to `FOS\UserBundle\Doctrine\UserManager`.
+to `Mahefa\FOS\UserBundle\Doctrine\UserManager`.
 
 ### Propel implementation
 
@@ -290,15 +290,15 @@ Before:
 
 ```yaml
 fos_user:
-    user_class: FOS\UserBundle\Propel\UserProxy
-    propel_user_class: FOS\UserBundle\Propel\User
+    user_class: Mahefa\FOS\UserBundle\Propel\UserProxy
+    propel_user_class: Mahefa\FOS\UserBundle\Propel\User
 ```
 
 After:
 
 ```yaml
 fos_user:
-    user_class: FOS\UserBundle\Propel\User
+    user_class: Mahefa\FOS\UserBundle\Propel\User
 ```
 
 ### Token generation
@@ -326,7 +326,7 @@ value of the bundle, the config should look like this to reuse the same settings
 #app/config/security.yml
 security:
     encoders:
-        "FOS\UserBundle\Model\UserInterface":
+        "Mahefa\FOS\UserBundle\Model\UserInterface":
             algorithm: sha512
             encode_as_base64: false
             iterations: 1

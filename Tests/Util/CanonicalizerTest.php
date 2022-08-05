@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace FOS\UserBundle\Tests\Util;
+namespace Mahefa\FOS\UserBundle\Tests\Util;
 
-use FOS\UserBundle\Util\Canonicalizer;
+use Mahefa\FOS\UserBundle\Util\Canonicalizer;
 use PHPUnit\Framework\TestCase;
 
 class CanonicalizerTest extends TestCase

@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace FOS\UserBundle\Tests\Util;
+namespace Mahefa\FOS\UserBundle\Tests\Util;
 
-use FOS\UserBundle\Tests\TestUser;
-use FOS\UserBundle\Util\CanonicalFieldsUpdater;
+use Mahefa\FOS\UserBundle\Tests\TestUser;
+use Mahefa\FOS\UserBundle\Util\CanonicalFieldsUpdater;
 use PHPUnit\Framework\TestCase;
 
 class CanonicalFieldsUpdaterTest extends TestCase
@@ -55,6 +55,6 @@ class CanonicalFieldsUpdaterTest extends TestCase
 
     private function getMockCanonicalizer()
     {
-        return $this->getMockBuilder('FOS\UserBundle\Util\CanonicalizerInterface')->getMock();
+        return $this->getMockBuilder('Mahefa\FOS\UserBundle\Util\CanonicalizerInterface')->getMock();
     }
 }

@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace FOS\UserBundle\Tests\Security;
+namespace Mahefa\FOS\UserBundle\Tests\Security;
 
-use FOS\UserBundle\Security\EmailProvider;
+use Mahefa\FOS\UserBundle\Security\EmailProvider;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Security\Core\Exception\UnsupportedUserException;
 use Symfony\Component\Security\Core\Exception\UsernameNotFoundException;
@@ -30,13 +30,13 @@ class EmailProviderTest extends TestCase
 
     protected function setUp(): void
     {
-        $this->userManager = $this->getMockBuilder('FOS\UserBundle\Model\UserManagerInterface')->getMock();
+        $this->userManager = $this->getMockBuilder('Mahefa\FOS\UserBundle\Model\UserManagerInterface')->getMock();
         $this->userProvider = new EmailProvider($this->userManager);
     }
 
     public function testLoadUserByUsername()
     {
-        $user = $this->getMockBuilder('FOS\UserBundle\Model\UserInterface')->getMock();
+        $user = $this->getMockBuilder('Mahefa\FOS\UserBundle\Model\UserInterface')->getMock();
         $this->userManager->expects($this->once())
             ->method('findUserByEmail')
             ->with('foobar')
@@ -59,7 +59,7 @@ class EmailProviderTest extends TestCase
 
     public function testRefreshUserBy()
     {
-        $user = $this->getMockBuilder('FOS\UserBundle\Model\User')
+        $user = $this->getMockBuilder('Mahefa\FOS\UserBundle\Model\User')
                     ->setMethods(['getId'])
                     ->getMock();
 
@@ -67,7 +67,7 @@ class EmailProviderTest extends TestCase
             ->method('getId')
             ->will($this->returnValue('123'));
 
-        $refreshedUser = $this->getMockBuilder('FOS\UserBundle\Model\UserInterface')->getMock();
+        $refreshedUser = $this->getMockBuilder('Mahefa\FOS\UserBundle\Model\UserInterface')->getMock();
         $this->userManager->expects($this->once())
             ->method('findUserBy')
             ->with(['id' => '123'])
@@ -84,7 +84,7 @@ class EmailProviderTest extends TestCase
     {
         $this->expectException(UsernameNotFoundException::class);
 
-        $user = $this->getMockForAbstractClass('FOS\UserBundle\Model\User');
+        $user = $this->getMockForAbstractClass('Mahefa\FOS\UserBundle\Model\User');
         $this->userManager->expects($this->once())
             ->method('findUserBy')
             ->will($this->returnValue(null));
@@ -112,8 +112,8 @@ class EmailProviderTest extends TestCase
     {
         $this->expectException(UnsupportedUserException::class);
 
-        $user = $this->getMockBuilder('FOS\UserBundle\Model\User')->getMock();
-        $providedUser = $this->getMockBuilder('FOS\UserBundle\Tests\TestUser')->getMock();
+        $user = $this->getMockBuilder('Mahefa\FOS\UserBundle\Model\User')->getMock();
+        $providedUser = $this->getMockBuilder('Mahefa\FOS\UserBundle\Tests\TestUser')->getMock();
 
         $this->userManager->expects($this->atLeastOnce())
             ->method('getClass')

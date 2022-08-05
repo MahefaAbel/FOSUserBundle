@@ -20,12 +20,12 @@ All available configuration options are listed below with their default values.
             sender_name:    webmaster
         profile:
             form:
-                type:               FOS\UserBundle\Form\Type\ProfileFormType
+                type:               Mahefa\FOS\UserBundle\Form\Type\ProfileFormType
                 name:               fos_user_profile_form
                 validation_groups:  [Profile, Default]
         change_password:
             form:
-                type:               FOS\UserBundle\Form\Type\ChangePasswordFormType
+                type:               Mahefa\FOS\UserBundle\Form\Type\ChangePasswordFormType
                 name:               fos_user_change_password_form
                 validation_groups:  [ChangePassword, Default]
         registration:
@@ -36,7 +36,7 @@ All available configuration options are listed below with their default values.
                 enabled:    false # change to true for required email confirmation
                 template:   '@FOSUser/Registration/email.txt.twig'
             form:
-                type:               FOS\UserBundle\Form\Type\RegistrationFormType
+                type:               Mahefa\FOS\UserBundle\Form\Type\RegistrationFormType
                 name:               fos_user_registration_form
                 validation_groups:  [Registration, Default]
         resetting:
@@ -48,7 +48,7 @@ All available configuration options are listed below with their default values.
                     sender_name:    ...
                 template:   '@FOSUser/Resetting/email.txt.twig'
             form:
-                type:               FOS\UserBundle\Form\Type\ResettingFormType
+                type:               Mahefa\FOS\UserBundle\Form\Type\ResettingFormType
                 name:               fos_user_resetting_form
                 validation_groups:  [ResetPassword, Default]
         service:

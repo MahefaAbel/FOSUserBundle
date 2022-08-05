@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace FOS\UserBundle\Util;
+namespace Mahefa\FOS\UserBundle\Util;
 
 interface CanonicalizerInterface
 {

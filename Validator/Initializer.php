@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace FOS\UserBundle\Validator;
+namespace Mahefa\FOS\UserBundle\Validator;
 
-use FOS\UserBundle\Model\UserInterface;
-use FOS\UserBundle\Util\CanonicalFieldsUpdater;
+use Mahefa\FOS\UserBundle\Model\UserInterface;
+use Mahefa\FOS\UserBundle\Util\CanonicalFieldsUpdater;
 use Symfony\Component\Validator\ObjectInitializerInterface;
 
 /**

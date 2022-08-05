@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace FOS\UserBundle\Tests\EventListener;
+namespace Mahefa\FOS\UserBundle\Tests\EventListener;
 
-use FOS\UserBundle\EventListener\FlashListener;
-use FOS\UserBundle\FOSUserEvents;
+use Mahefa\FOS\UserBundle\EventListener\FlashListener;
+use Mahefa\FOS\UserBundle\FOSUserEvents;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\HttpFoundation\Request;

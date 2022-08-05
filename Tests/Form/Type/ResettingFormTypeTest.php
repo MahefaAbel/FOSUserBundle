@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace FOS\UserBundle\Tests\Form\Type;
+namespace Mahefa\FOS\UserBundle\Tests\Form\Type;
 
-use FOS\UserBundle\Form\Type\ResettingFormType;
-use FOS\UserBundle\Tests\TestUser;
+use Mahefa\FOS\UserBundle\Form\Type\ResettingFormType;
+use Mahefa\FOS\UserBundle\Tests\TestUser;
 
 class ResettingFormTypeTest extends ValidatorExtensionTypeTestCase
 {
@@ -37,7 +37,7 @@ class ResettingFormTypeTest extends ValidatorExtensionTypeTestCase
     protected function getTypes(): array
     {
         return array_merge(parent::getTypes(), [
-            new ResettingFormType('FOS\UserBundle\Tests\TestUser'),
+            new ResettingFormType('Mahefa\FOS\UserBundle\Tests\TestUser'),
         ]);
     }
 }

@@ -9,18 +9,18 @@
  * file that was distributed with this source code.
  */
 
-namespace FOS\UserBundle\Tests\Doctrine;
+namespace Mahefa\FOS\UserBundle\Tests\Doctrine;
 
 use Doctrine\Persistence\Mapping\ClassMetadata;
 use Doctrine\Persistence\ObjectManager;
 use Doctrine\Persistence\ObjectRepository;
-use FOS\UserBundle\Doctrine\UserManager;
-use FOS\UserBundle\Model\User;
+use Mahefa\FOS\UserBundle\Doctrine\UserManager;
+use Mahefa\FOS\UserBundle\Model\User;
 use PHPUnit\Framework\TestCase;
 
 class UserManagerTest extends TestCase
 {
-    public const USER_CLASS = 'FOS\UserBundle\Tests\Doctrine\DummyUser';
+    public const USER_CLASS = 'Mahefa\FOS\UserBundle\Tests\Doctrine\DummyUser';
 
     /** @var UserManager */
     protected $userManager;
@@ -35,8 +35,8 @@ class UserManagerTest extends TestCase
             $this->markTestSkipped('"doctrine/persistence" ^1.3 has to be installed for this test to run.');
         }
 
-        $passwordUpdater = $this->getMockBuilder('FOS\UserBundle\Util\PasswordUpdaterInterface')->getMock();
-        $fieldsUpdater = $this->getMockBuilder('FOS\UserBundle\Util\CanonicalFieldsUpdater')
+        $passwordUpdater = $this->getMockBuilder('Mahefa\FOS\UserBundle\Util\PasswordUpdaterInterface')->getMock();
+        $fieldsUpdater = $this->getMockBuilder('Mahefa\FOS\UserBundle\Util\CanonicalFieldsUpdater')
             ->disableOriginalConstructor()
             ->getMock();
         $class = $this->getMockBuilder(ClassMetadata::class)->getMock();

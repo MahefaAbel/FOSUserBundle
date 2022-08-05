@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace FOS\UserBundle\Tests\Routing;
+namespace Mahefa\FOS\UserBundle\Tests\Routing;
 
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Config\FileLocator;

@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace FOS\UserBundle\Tests\Util;
+namespace Mahefa\FOS\UserBundle\Tests\Util;
 
-use FOS\UserBundle\Tests\TestUser;
-use FOS\UserBundle\Util\PasswordUpdater;
+use Mahefa\FOS\UserBundle\Tests\TestUser;
+use Mahefa\FOS\UserBundle\Util\PasswordUpdater;
 use PHPUnit\Framework\TestCase;
 
 class PasswordUpdaterTest extends TestCase

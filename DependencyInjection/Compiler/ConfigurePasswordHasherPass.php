@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace FOS\UserBundle\DependencyInjection\Compiler;
+namespace Mahefa\FOS\UserBundle\DependencyInjection\Compiler;
 
-use FOS\UserBundle\Util\PasswordUpdater;
+use Mahefa\FOS\UserBundle\Util\PasswordUpdater;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Reference;

@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace FOS\UserBundle;
+namespace Mahefa\FOS\UserBundle;
 
 /**
  * Contains all events thrown in the FOSUserBundle.
@@ -21,7 +21,7 @@ final class FOSUserEvents
      *
      * This event allows you to modify the default values of the user before binding the form.
      *
-     * @Event("FOS\UserBundle\Event\GetResponseUserEvent")
+     * @Event("Mahefa\FOS\UserBundle\Event\GetResponseUserEvent")
      */
     public const CHANGE_PASSWORD_INITIALIZE = 'fos_user.change_password.edit.initialize';
 
@@ -30,7 +30,7 @@ final class FOSUserEvents
      *
      * This event allows you to set the response instead of using the default one.
      *
-     * @Event("FOS\UserBundle\Event\FormEvent")
+     * @Event("Mahefa\FOS\UserBundle\Event\FormEvent")
      */
     public const CHANGE_PASSWORD_SUCCESS = 'fos_user.change_password.edit.success';
 
@@ -39,7 +39,7 @@ final class FOSUserEvents
      *
      * This event allows you to access the response which will be sent.
      *
-     * @Event("FOS\UserBundle\Event\FilterUserResponseEvent")
+     * @Event("Mahefa\FOS\UserBundle\Event\FilterUserResponseEvent")
      */
     public const CHANGE_PASSWORD_COMPLETED = 'fos_user.change_password.edit.completed';
 
@@ -48,7 +48,7 @@ final class FOSUserEvents
      *
      * This event allows you to modify the default values of the user before binding the form.
      *
-     * @Event("FOS\UserBundle\Event\GetResponseUserEvent")
+     * @Event("Mahefa\FOS\UserBundle\Event\GetResponseUserEvent")
      */
     public const PROFILE_EDIT_INITIALIZE = 'fos_user.profile.edit.initialize';
 
@@ -57,7 +57,7 @@ final class FOSUserEvents
      *
      * This event allows you to set the response instead of using the default one.
      *
-     * @Event("FOS\UserBundle\Event\FormEvent")
+     * @Event("Mahefa\FOS\UserBundle\Event\FormEvent")
      */
     public const PROFILE_EDIT_SUCCESS = 'fos_user.profile.edit.success';
 
@@ -66,7 +66,7 @@ final class FOSUserEvents
      *
      * This event allows you to access the response which will be sent.
      *
-     * @Event("FOS\UserBundle\Event\FilterUserResponseEvent")
+     * @Event("Mahefa\FOS\UserBundle\Event\FilterUserResponseEvent")
      */
     public const PROFILE_EDIT_COMPLETED = 'fos_user.profile.edit.completed';
 
@@ -75,7 +75,7 @@ final class FOSUserEvents
      *
      * This event allows you to modify the default values of the user before binding the form.
      *
-     * @Event("FOS\UserBundle\Event\UserEvent")
+     * @Event("Mahefa\FOS\UserBundle\Event\UserEvent")
      */
     public const REGISTRATION_INITIALIZE = 'fos_user.registration.initialize';
 
@@ -84,7 +84,7 @@ final class FOSUserEvents
      *
      * This event allows you to set the response instead of using the default one.
      *
-     * @Event("FOS\UserBundle\Event\FormEvent")
+     * @Event("Mahefa\FOS\UserBundle\Event\FormEvent")
      */
     public const REGISTRATION_SUCCESS = 'fos_user.registration.success';
 
@@ -92,9 +92,9 @@ final class FOSUserEvents
      * The REGISTRATION_FAILURE event occurs when the registration form is not valid.
      *
      * This event allows you to set the response instead of using the default one.
-     * The event listener method receives a FOS\UserBundle\Event\FormEvent instance.
+     * The event listener method receives a Mahefa\FOS\UserBundle\Event\FormEvent instance.
      *
-     * @Event("FOS\UserBundle\Event\FormEvent")
+     * @Event("Mahefa\FOS\UserBundle\Event\FormEvent")
      */
     public const REGISTRATION_FAILURE = 'fos_user.registration.failure';
 
@@ -103,7 +103,7 @@ final class FOSUserEvents
      *
      * This event allows you to access the response which will be sent.
      *
-     * @Event("FOS\UserBundle\Event\FilterUserResponseEvent")
+     * @Event("Mahefa\FOS\UserBundle\Event\FilterUserResponseEvent")
      */
     public const REGISTRATION_COMPLETED = 'fos_user.registration.completed';
 
@@ -112,7 +112,7 @@ final class FOSUserEvents
      *
      * This event allows you to access the user which will be confirmed.
      *
-     * @Event("FOS\UserBundle\Event\GetResponseUserEvent")
+     * @Event("Mahefa\FOS\UserBundle\Event\GetResponseUserEvent")
      */
     public const REGISTRATION_CONFIRM = 'fos_user.registration.confirm';
 
@@ -121,7 +121,7 @@ final class FOSUserEvents
      *
      * This event allows you to access the response which will be sent.
      *
-     * @Event("FOS\UserBundle\Event\FilterUserResponseEvent")
+     * @Event("Mahefa\FOS\UserBundle\Event\FilterUserResponseEvent")
      */
     public const REGISTRATION_CONFIRMED = 'fos_user.registration.confirmed';
 
@@ -129,9 +129,9 @@ final class FOSUserEvents
      * The RESETTING_RESET_REQUEST event occurs when a user requests a password reset of the account.
      *
      * This event allows you to check if a user is locked out before requesting a password.
-     * The event listener method receives a FOS\UserBundle\Event\GetResponseUserEvent instance.
+     * The event listener method receives a Mahefa\FOS\UserBundle\Event\GetResponseUserEvent instance.
      *
-     * @Event("FOS\UserBundle\Event\GetResponseUserEvent")
+     * @Event("Mahefa\FOS\UserBundle\Event\GetResponseUserEvent")
      */
     public const RESETTING_RESET_REQUEST = 'fos_user.resetting.reset.request';
 
@@ -140,7 +140,7 @@ final class FOSUserEvents
      *
      * This event allows you to set the response to bypass the processing.
      *
-     * @Event("FOS\UserBundle\Event\GetResponseUserEvent")
+     * @Event("Mahefa\FOS\UserBundle\Event\GetResponseUserEvent")
      */
     public const RESETTING_RESET_INITIALIZE = 'fos_user.resetting.reset.initialize';
 
@@ -149,7 +149,7 @@ final class FOSUserEvents
      *
      * This event allows you to set the response instead of using the default one.
      *
-     * @Event("FOS\UserBundle\Event\FormEvent ")
+     * @Event("Mahefa\FOS\UserBundle\Event\FormEvent ")
      */
     public const RESETTING_RESET_SUCCESS = 'fos_user.resetting.reset.success';
 
@@ -158,7 +158,7 @@ final class FOSUserEvents
      *
      * This event allows you to access the response which will be sent.
      *
-     * @Event("FOS\UserBundle\Event\FilterUserResponseEvent")
+     * @Event("Mahefa\FOS\UserBundle\Event\FilterUserResponseEvent")
      */
     public const RESETTING_RESET_COMPLETED = 'fos_user.resetting.reset.completed';
 
@@ -167,7 +167,7 @@ final class FOSUserEvents
      *
      * This event allows you to access the response which will be sent.
      *
-     * @Event("FOS\UserBundle\Event\UserEvent")
+     * @Event("Mahefa\FOS\UserBundle\Event\UserEvent")
      */
     public const SECURITY_IMPLICIT_LOGIN = 'fos_user.security.implicit_login';
 
@@ -175,9 +175,9 @@ final class FOSUserEvents
      * The RESETTING_SEND_EMAIL_INITIALIZE event occurs when the send email process is initialized.
      *
      * This event allows you to set the response to bypass the email confirmation processing.
-     * The event listener method receives a FOS\UserBundle\Event\GetResponseNullableUserEvent instance.
+     * The event listener method receives a Mahefa\FOS\UserBundle\Event\GetResponseNullableUserEvent instance.
      *
-     * @Event("FOS\UserBundle\Event\GetResponseNullableUserEvent")
+     * @Event("Mahefa\FOS\UserBundle\Event\GetResponseNullableUserEvent")
      */
     public const RESETTING_SEND_EMAIL_INITIALIZE = 'fos_user.resetting.send_email.initialize';
 
@@ -186,9 +186,9 @@ final class FOSUserEvents
      * confirmed and before the mail is sent.
      *
      * This event allows you to set the response to bypass the email sending.
-     * The event listener method receives a FOS\UserBundle\Event\GetResponseUserEvent instance.
+     * The event listener method receives a Mahefa\FOS\UserBundle\Event\GetResponseUserEvent instance.
      *
-     * @Event("FOS\UserBundle\Event\GetResponseUserEvent")
+     * @Event("Mahefa\FOS\UserBundle\Event\GetResponseUserEvent")
      */
     public const RESETTING_SEND_EMAIL_CONFIRM = 'fos_user.resetting.send_email.confirm';
 
@@ -196,9 +196,9 @@ final class FOSUserEvents
      * The RESETTING_SEND_EMAIL_COMPLETED event occurs after the email is sent.
      *
      * This event allows you to set the response to bypass the the redirection after the email is sent.
-     * The event listener method receives a FOS\UserBundle\Event\GetResponseUserEvent instance.
+     * The event listener method receives a Mahefa\FOS\UserBundle\Event\GetResponseUserEvent instance.
      *
-     * @Event("FOS\UserBundle\Event\GetResponseUserEvent")
+     * @Event("Mahefa\FOS\UserBundle\Event\GetResponseUserEvent")
      */
     public const RESETTING_SEND_EMAIL_COMPLETED = 'fos_user.resetting.send_email.completed';
 
@@ -207,7 +207,7 @@ final class FOSUserEvents
      *
      * This event allows you to access the created user and to add some behaviour after the creation.
      *
-     * @Event("FOS\UserBundle\Event\UserEvent")
+     * @Event("Mahefa\FOS\UserBundle\Event\UserEvent")
      */
     public const USER_CREATED = 'fos_user.user.created';
 
@@ -216,7 +216,7 @@ final class FOSUserEvents
      *
      * This event allows you to access the created user and to add some behaviour after the password change.
      *
-     * @Event("FOS\UserBundle\Event\UserEvent")
+     * @Event("Mahefa\FOS\UserBundle\Event\UserEvent")
      */
     public const USER_PASSWORD_CHANGED = 'fos_user.user.password_changed';
 
@@ -225,7 +225,7 @@ final class FOSUserEvents
      *
      * This event allows you to access the activated user and to add some behaviour after the activation.
      *
-     * @Event("FOS\UserBundle\Event\UserEvent")
+     * @Event("Mahefa\FOS\UserBundle\Event\UserEvent")
      */
     public const USER_ACTIVATED = 'fos_user.user.activated';
 
@@ -234,7 +234,7 @@ final class FOSUserEvents
      *
      * This event allows you to access the deactivated user and to add some behaviour after the deactivation.
      *
-     * @Event("FOS\UserBundle\Event\UserEvent")
+     * @Event("Mahefa\FOS\UserBundle\Event\UserEvent")
      */
     public const USER_DEACTIVATED = 'fos_user.user.deactivated';
 
@@ -243,7 +243,7 @@ final class FOSUserEvents
      *
      * This event allows you to access the promoted user and to add some behaviour after the promotion.
      *
-     * @Event("FOS\UserBundle\Event\UserEvent")
+     * @Event("Mahefa\FOS\UserBundle\Event\UserEvent")
      */
     public const USER_PROMOTED = 'fos_user.user.promoted';
 
@@ -252,7 +252,7 @@ final class FOSUserEvents
      *
      * This event allows you to access the demoted user and to add some behaviour after the demotion.
      *
-     * @Event("FOS\UserBundle\Event\UserEvent")
+     * @Event("Mahefa\FOS\UserBundle\Event\UserEvent")
      */
     public const USER_DEMOTED = 'fos_user.user.demoted';
 }

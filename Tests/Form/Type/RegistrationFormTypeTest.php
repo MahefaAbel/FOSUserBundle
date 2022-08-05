@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace FOS\UserBundle\Tests\Form\Type;
+namespace Mahefa\FOS\UserBundle\Tests\Form\Type;
 
-use FOS\UserBundle\Form\Type\RegistrationFormType;
-use FOS\UserBundle\Tests\TestUser;
+use Mahefa\FOS\UserBundle\Form\Type\RegistrationFormType;
+use Mahefa\FOS\UserBundle\Tests\TestUser;
 
 class RegistrationFormTypeTest extends ValidatorExtensionTypeTestCase
 {
@@ -41,7 +41,7 @@ class RegistrationFormTypeTest extends ValidatorExtensionTypeTestCase
     protected function getTypes(): array
     {
         return array_merge(parent::getTypes(), [
-            new RegistrationFormType('FOS\UserBundle\Tests\TestUser'),
+            new RegistrationFormType('Mahefa\FOS\UserBundle\Tests\TestUser'),
         ]);
     }
 }

@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace FOS\UserBundle\Tests\Model;
+namespace Mahefa\FOS\UserBundle\Tests\Model;
 
-use FOS\UserBundle\Model\UserManager;
+use Mahefa\FOS\UserBundle\Model\UserManager;
 use PHPUnit\Framework\TestCase;
 
 class UserManagerTest extends TestCase
@@ -27,8 +27,8 @@ class UserManagerTest extends TestCase
 
     protected function setUp(): void
     {
-        $this->passwordUpdater = $this->getMockBuilder('FOS\UserBundle\Util\PasswordUpdaterInterface')->getMock();
-        $this->fieldsUpdater = $this->getMockBuilder('FOS\UserBundle\Util\CanonicalFieldsUpdater')
+        $this->passwordUpdater = $this->getMockBuilder('Mahefa\FOS\UserBundle\Util\PasswordUpdaterInterface')->getMock();
+        $this->fieldsUpdater = $this->getMockBuilder('Mahefa\FOS\UserBundle\Util\CanonicalFieldsUpdater')
             ->disableOriginalConstructor()
             ->getMock();
 
@@ -172,7 +172,7 @@ class UserManagerTest extends TestCase
      */
     private function getUser()
     {
-        return $this->getMockBuilder('FOS\UserBundle\Model\User')
+        return $this->getMockBuilder('Mahefa\FOS\UserBundle\Model\User')
             ->getMockForAbstractClass();
     }
 
@@ -181,7 +181,7 @@ class UserManagerTest extends TestCase
      */
     private function getUserManager(array $args)
     {
-        return $this->getMockBuilder('FOS\UserBundle\Model\UserManager')
+        return $this->getMockBuilder('Mahefa\FOS\UserBundle\Model\UserManager')
             ->setConstructorArgs($args)
             ->getMockForAbstractClass();
     }

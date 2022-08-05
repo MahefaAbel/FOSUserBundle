@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace FOS\UserBundle\Tests\Form\Type;
+namespace Mahefa\FOS\UserBundle\Tests\Form\Type;
 
-use FOS\UserBundle\Form\Type\ChangePasswordFormType;
-use FOS\UserBundle\Tests\TestUser;
+use Mahefa\FOS\UserBundle\Form\Type\ChangePasswordFormType;
+use Mahefa\FOS\UserBundle\Tests\TestUser;
 
 class ChangePasswordFormTypeTest extends ValidatorExtensionTypeTestCase
 {
@@ -39,7 +39,7 @@ class ChangePasswordFormTypeTest extends ValidatorExtensionTypeTestCase
     protected function getTypes(): array
     {
         return array_merge(parent::getTypes(), [
-            new ChangePasswordFormType('FOS\UserBundle\Tests\TestUser'),
+            new ChangePasswordFormType('Mahefa\FOS\UserBundle\Tests\TestUser'),
         ]);
     }
 }

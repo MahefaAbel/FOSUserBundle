@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace FOS\UserBundle\Tests\EventListener;
+namespace Mahefa\FOS\UserBundle\Tests\EventListener;
 
-use FOS\UserBundle\Event\FilterUserResponseEvent;
-use FOS\UserBundle\EventListener\AuthenticationListener;
-use FOS\UserBundle\FOSUserEvents;
+use Mahefa\FOS\UserBundle\Event\FilterUserResponseEvent;
+use Mahefa\FOS\UserBundle\EventListener\AuthenticationListener;
+use Mahefa\FOS\UserBundle\FOSUserEvents;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 
@@ -32,7 +32,7 @@ class AuthenticationListenerTest extends TestCase
 
     protected function setUp(): void
     {
-        $user = $this->getMockBuilder('FOS\UserBundle\Model\UserInterface')->getMock();
+        $user = $this->getMockBuilder('Mahefa\FOS\UserBundle\Model\UserInterface')->getMock();
 
         $response = $this->getMockBuilder('Symfony\Component\HttpFoundation\Response')->getMock();
         $request = $this->getMockBuilder('Symfony\Component\HttpFoundation\Request')->getMock();
@@ -43,7 +43,7 @@ class AuthenticationListenerTest extends TestCase
             ->expects($this->once())
             ->method('dispatch');
 
-        $loginManager = $this->getMockBuilder('FOS\UserBundle\Security\LoginManagerInterface')->getMock();
+        $loginManager = $this->getMockBuilder('Mahefa\FOS\UserBundle\Security\LoginManagerInterface')->getMock();
 
         $this->listener = new AuthenticationListener($loginManager, self::FIREWALL_NAME);
     }

@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace FOS\UserBundle\Form\Factory;
+namespace Mahefa\FOS\UserBundle\Form\Factory;
 
 use Symfony\Component\Form\FormInterface;
 

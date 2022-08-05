@@ -9,17 +9,17 @@
  * file that was distributed with this source code.
  */
 
-namespace FOS\UserBundle;
+namespace Mahefa\FOS\UserBundle;
 
 use Doctrine\Bundle\CouchDBBundle\DependencyInjection\Compiler\DoctrineCouchDBMappingsPass;
 use Doctrine\Bundle\DoctrineBundle\DependencyInjection\Compiler\DoctrineOrmMappingsPass;
 use Doctrine\Bundle\MongoDBBundle\DependencyInjection\Compiler\DoctrineMongoDBMappingsPass;
-use FOS\UserBundle\DependencyInjection\Compiler\CheckForSessionPass;
-use FOS\UserBundle\DependencyInjection\Compiler\CheckForSwiftMailerPass;
-use FOS\UserBundle\DependencyInjection\Compiler\ConfigurePasswordHasherPass;
-use FOS\UserBundle\DependencyInjection\Compiler\InjectRememberMeServicesPass;
-use FOS\UserBundle\DependencyInjection\Compiler\InjectUserCheckerPass;
-use FOS\UserBundle\DependencyInjection\Compiler\ValidationPass;
+use Mahefa\FOS\UserBundle\DependencyInjection\Compiler\CheckForSessionPass;
+use Mahefa\FOS\UserBundle\DependencyInjection\Compiler\CheckForSwiftMailerPass;
+use Mahefa\FOS\UserBundle\DependencyInjection\Compiler\ConfigurePasswordHasherPass;
+use Mahefa\FOS\UserBundle\DependencyInjection\Compiler\InjectRememberMeServicesPass;
+use Mahefa\FOS\UserBundle\DependencyInjection\Compiler\InjectUserCheckerPass;
+use Mahefa\FOS\UserBundle\DependencyInjection\Compiler\ValidationPass;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
@@ -47,7 +47,7 @@ class FOSUserBundle extends Bundle
     private function addRegisterMappingsPass(ContainerBuilder $container)
     {
         $mappings = [
-            realpath(__DIR__.'/Resources/config/doctrine-mapping') => 'FOS\UserBundle\Model',
+            realpath(__DIR__.'/Resources/config/doctrine-mapping') => 'Mahefa\FOS\UserBundle\Model',
         ];
 
         if (class_exists('Doctrine\Bundle\DoctrineBundle\DependencyInjection\Compiler\DoctrineOrmMappingsPass')) {

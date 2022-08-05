@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace FOS\UserBundle\Tests\Form\Type;
+namespace Mahefa\FOS\UserBundle\Tests\Form\Type;
 
 use Symfony\Component\Form\Extension\Validator\Type\FormTypeValidatorExtension;
 use Symfony\Component\Form\Test\TypeTestCase;

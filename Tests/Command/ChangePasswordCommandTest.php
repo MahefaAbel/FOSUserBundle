@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace FOS\UserBundle\Tests\Command;
+namespace Mahefa\FOS\UserBundle\Tests\Command;
 
-use FOS\UserBundle\Command\ChangePasswordCommand;
-use FOS\UserBundle\Util\UserManipulator;
+use Mahefa\FOS\UserBundle\Command\ChangePasswordCommand;
+use Mahefa\FOS\UserBundle\Util\UserManipulator;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Console\Application;
 use Symfony\Component\Console\Tester\CommandTester;
@@ -86,7 +86,7 @@ class ChangePasswordCommandTest extends TestCase
      */
     private function getManipulator($username, $password)
     {
-        $manipulator = $this->getMockBuilder('FOS\UserBundle\Util\UserManipulator')
+        $manipulator = $this->getMockBuilder('Mahefa\FOS\UserBundle\Util\UserManipulator')
             ->disableOriginalConstructor()
             ->getMock();
 

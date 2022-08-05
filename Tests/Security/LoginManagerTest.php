@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace FOS\UserBundle\Tests\Security;
+namespace Mahefa\FOS\UserBundle\Tests\Security;
 
-use FOS\UserBundle\Security\LoginManager;
+use Mahefa\FOS\UserBundle\Security\LoginManager;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -49,7 +49,7 @@ class LoginManagerTest extends TestCase
         $userChecker
             ->expects($this->once())
             ->method('checkPreAuth')
-            ->with($this->isInstanceOf('FOS\UserBundle\Model\UserInterface'));
+            ->with($this->isInstanceOf('Mahefa\FOS\UserBundle\Model\UserInterface'));
 
         $request = $this->getMockBuilder('Symfony\Component\HttpFoundation\Request')->getMock();
 
@@ -82,7 +82,7 @@ class LoginManagerTest extends TestCase
      */
     private function mockUser()
     {
-        $user = $this->getMockBuilder('FOS\UserBundle\Model\UserInterface')->getMock();
+        $user = $this->getMockBuilder('Mahefa\FOS\UserBundle\Model\UserInterface')->getMock();
         $user
             ->expects($this->once())
             ->method('getRoles')

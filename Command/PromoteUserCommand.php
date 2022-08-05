@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace FOS\UserBundle\Command;
+namespace Mahefa\FOS\UserBundle\Command;
 
-use FOS\UserBundle\Util\UserManipulator;
+use Mahefa\FOS\UserBundle\Util\UserManipulator;
 use Symfony\Component\Console\Output\OutputInterface;
 
 /**

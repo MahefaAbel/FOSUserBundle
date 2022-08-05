@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace FOS\UserBundle\Security;
+namespace Mahefa\FOS\UserBundle\Security;
 
-use FOS\UserBundle\Model\UserInterface;
-use FOS\UserBundle\Model\UserManagerInterface;
+use Mahefa\FOS\UserBundle\Model\UserInterface;
+use Mahefa\FOS\UserBundle\Model\UserManagerInterface;
 use Symfony\Component\Security\Core\Exception\UnsupportedUserException;
 use Symfony\Component\Security\Core\Exception\UsernameNotFoundException;
 use Symfony\Component\Security\Core\Exception\UserNotFoundException;
@@ -69,7 +69,7 @@ class UserProvider implements UserProviderInterface
     public function refreshUser(SecurityUserInterface $user): SecurityUserInterface
     {
         if (!$user instanceof UserInterface) {
-            throw new UnsupportedUserException(sprintf('Expected an instance of FOS\UserBundle\Model\UserInterface, but got "%s".', get_class($user)));
+            throw new UnsupportedUserException(sprintf('Expected an instance of Mahefa\FOS\UserBundle\Model\UserInterface, but got "%s".', get_class($user)));
         }
 
         if (!$this->supportsClass(get_class($user))) {

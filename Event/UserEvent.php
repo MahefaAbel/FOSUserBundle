@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace FOS\UserBundle\Event;
+namespace Mahefa\FOS\UserBundle\Event;
 
-use FOS\UserBundle\Model\UserInterface;
+use Mahefa\FOS\UserBundle\Model\UserInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Contracts\EventDispatcher\Event;
 

@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace FOS\UserBundle\Tests;
+namespace Mahefa\FOS\UserBundle\Tests;
 
-use FOS\UserBundle\Model\User;
+use Mahefa\FOS\UserBundle\Model\User;
 
 class TestUser extends User
 {

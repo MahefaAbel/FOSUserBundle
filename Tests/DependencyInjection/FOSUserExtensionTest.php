@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace FOS\UserBundle\Tests\DependencyInjection;
+namespace Mahefa\FOS\UserBundle\Tests\DependencyInjection;
 
-use FOS\UserBundle\DependencyInjection\FOSUserExtension;
+use Mahefa\FOS\UserBundle\DependencyInjection\FOSUserExtension;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Config\Definition\Exception\InvalidConfigurationException;
 use Symfony\Component\DependencyInjection\ContainerBuilder;

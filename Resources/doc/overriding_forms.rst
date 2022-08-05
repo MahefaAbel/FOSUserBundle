@@ -22,7 +22,7 @@ property and its validators.
 
     // src/AppBundle/Entity/User.php
 
-    use FOS\UserBundle\Model\User as BaseUser;
+    use Mahefa\FOS\UserBundle\Model\User as BaseUser;
     use Doctrine\ORM\Mapping as ORM;
     use Symfony\Component\Validator\Constraints as Assert;
 
@@ -85,7 +85,7 @@ the form type hierarchy and then adds the custom ``name`` field.
 
         public function getParent()
         {
-            return 'FOS\UserBundle\Form\Type\RegistrationFormType';
+            return 'Mahefa\FOS\UserBundle\Form\Type\RegistrationFormType';
         }
 
         public function getBlockPrefix()

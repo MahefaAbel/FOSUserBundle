@@ -4,7 +4,7 @@
                   xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
                   http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
 
-    <mapped-superclass name="FOS\UserBundle\Model\User">
+    <mapped-superclass name="Mahefa\FOS\UserBundle\Model\User">
 
         <field name="username" column="username" type="string" length="180" />
 

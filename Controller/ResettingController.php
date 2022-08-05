@@ -9,18 +9,18 @@
  * file that was distributed with this source code.
  */
 
-namespace FOS\UserBundle\Controller;
+namespace Mahefa\FOS\UserBundle\Controller;
 
-use FOS\UserBundle\CompatibilityUtil;
-use FOS\UserBundle\Event\FilterUserResponseEvent;
-use FOS\UserBundle\Event\FormEvent;
-use FOS\UserBundle\Event\GetResponseNullableUserEvent;
-use FOS\UserBundle\Event\GetResponseUserEvent;
-use FOS\UserBundle\Form\Factory\FactoryInterface;
-use FOS\UserBundle\FOSUserEvents;
-use FOS\UserBundle\Mailer\MailerInterface;
-use FOS\UserBundle\Model\UserManagerInterface;
-use FOS\UserBundle\Util\TokenGeneratorInterface;
+use Mahefa\FOS\UserBundle\CompatibilityUtil;
+use Mahefa\FOS\UserBundle\Event\FilterUserResponseEvent;
+use Mahefa\FOS\UserBundle\Event\FormEvent;
+use Mahefa\FOS\UserBundle\Event\GetResponseNullableUserEvent;
+use Mahefa\FOS\UserBundle\Event\GetResponseUserEvent;
+use Mahefa\FOS\UserBundle\Form\Factory\FactoryInterface;
+use Mahefa\FOS\UserBundle\FOSUserEvents;
+use Mahefa\FOS\UserBundle\Mailer\MailerInterface;
+use Mahefa\FOS\UserBundle\Model\UserManagerInterface;
+use Mahefa\FOS\UserBundle\Util\TokenGeneratorInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;

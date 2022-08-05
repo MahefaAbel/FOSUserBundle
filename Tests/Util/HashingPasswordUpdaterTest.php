@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace FOS\UserBundle\Tests\Util;
+namespace Mahefa\FOS\UserBundle\Tests\Util;
 
-use FOS\UserBundle\Tests\TestUser;
-use FOS\UserBundle\Util\HashingPasswordUpdater;
+use Mahefa\FOS\UserBundle\Tests\TestUser;
+use Mahefa\FOS\UserBundle\Util\HashingPasswordUpdater;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\PasswordHasher\Hasher\PasswordHasherFactoryInterface;
 use Symfony\Component\PasswordHasher\LegacyPasswordHasherInterface;

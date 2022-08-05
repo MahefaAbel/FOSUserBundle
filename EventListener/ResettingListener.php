@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace FOS\UserBundle\EventListener;
+namespace Mahefa\FOS\UserBundle\EventListener;
 
-use FOS\UserBundle\Event\FormEvent;
-use FOS\UserBundle\Event\GetResponseUserEvent;
-use FOS\UserBundle\FOSUserEvents;
+use Mahefa\FOS\UserBundle\Event\FormEvent;
+use Mahefa\FOS\UserBundle\Event\GetResponseUserEvent;
+use Mahefa\FOS\UserBundle\FOSUserEvents;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
@@ -65,7 +65,7 @@ class ResettingListener implements EventSubscriberInterface
 
     public function onResettingResetSuccess(FormEvent $event)
     {
-        /** @var $user \FOS\UserBundle\Model\UserInterface */
+        /** @var $user \Mahefa\FOS\UserBundle\Model\UserInterface */
         $user = $event->getForm()->getData();
 
         $user->setConfirmationToken(null);

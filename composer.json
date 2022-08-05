@@ -1,24 +1,13 @@
 {
-    "name": "friendsofsymfony/user-bundle",
+    "name": "mahefa/user-bundle",
     "type": "symfony-bundle",
-    "description": "Symfony FOSUserBundle",
+    "description": "Symfony FOSUserBundle for Symfony 6",
     "keywords": [
         "User management"
     ],
     "homepage": "http://friendsofsymfony.github.com",
     "license": "MIT",
     "authors": [
-        {
-            "name": "Christophe Coevoet",
-            "email": "stof@notk.org"
-        },
-        {
-            "name": "Thibault Duplessis"
-        },
-        {
-            "name": "FriendsOfSymfony Community",
-            "homepage": "https://github.com/friendsofsymfony/FOSUserBundle/contributors"
-        },
         {
             "name": "Mahefa Abel",
             "homepage": "https://mahefa.pro"
@@ -68,7 +57,7 @@
     },
     "autoload": {
         "psr-4": {
-            "FOS\\UserBundle\\": ""
+            "Mahefa\\FOS\\UserBundle\\": ""
         },
         "exclude-from-classmap": [
             "/Tests/"
@@ -76,7 +65,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "FOS\\UserBundle\\Tests\\": "/Tests/"
+            "Mahefa\\FOS\\UserBundle\\Tests\\": "/Tests/"
         }
     },
     "support": {

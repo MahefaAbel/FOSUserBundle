@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace FOS\UserBundle\Tests\Util;
+namespace Mahefa\FOS\UserBundle\Tests\Util;
 
-use FOS\UserBundle\FOSUserEvents;
-use FOS\UserBundle\Tests\TestUser;
-use FOS\UserBundle\Util\UserManipulator;
+use Mahefa\FOS\UserBundle\FOSUserEvents;
+use Mahefa\FOS\UserBundle\Tests\TestUser;
+use Mahefa\FOS\UserBundle\Util\UserManipulator;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
@@ -23,7 +23,7 @@ class UserManipulatorTest extends TestCase
 {
     public function testCreate()
     {
-        $userManagerMock = $this->getMockBuilder('FOS\UserBundle\Model\UserManagerInterface')->getMock();
+        $userManagerMock = $this->getMockBuilder('Mahefa\FOS\UserBundle\Model\UserManagerInterface')->getMock();
         $user = new TestUser();
 
         $username = 'test_username';
@@ -39,7 +39,7 @@ class UserManipulatorTest extends TestCase
         $userManagerMock->expects($this->once())
             ->method('updateUser')
             ->will($this->returnValue($user))
-            ->with($this->isInstanceOf('FOS\UserBundle\Tests\TestUser'));
+            ->with($this->isInstanceOf('Mahefa\FOS\UserBundle\Tests\TestUser'));
 
         $eventDispatcherMock = $this->getEventDispatcherMock(FOSUserEvents::USER_CREATED, true);
 
@@ -57,7 +57,7 @@ class UserManipulatorTest extends TestCase
 
     public function testActivateWithValidUsername()
     {
-        $userManagerMock = $this->getMockBuilder('FOS\UserBundle\Model\UserManagerInterface')->getMock();
+        $userManagerMock = $this->getMockBuilder('Mahefa\FOS\UserBundle\Model\UserManagerInterface')->getMock();
         $username = 'test_username';
 
         $user = new TestUser();
@@ -72,7 +72,7 @@ class UserManipulatorTest extends TestCase
         $userManagerMock->expects($this->once())
             ->method('updateUser')
             ->will($this->returnValue($user))
-            ->with($this->isInstanceOf('FOS\UserBundle\Tests\TestUser'));
+            ->with($this->isInstanceOf('Mahefa\FOS\UserBundle\Tests\TestUser'));
 
         $eventDispatcherMock = $this->getEventDispatcherMock(FOSUserEvents::USER_ACTIVATED, true);
 
@@ -89,7 +89,7 @@ class UserManipulatorTest extends TestCase
     {
         $this->expectException(\InvalidArgumentException::class);
 
-        $userManagerMock = $this->getMockBuilder('FOS\UserBundle\Model\UserManagerInterface')->getMock();
+        $userManagerMock = $this->getMockBuilder('Mahefa\FOS\UserBundle\Model\UserManagerInterface')->getMock();
         $invalidusername = 'invalid_username';
 
         $userManagerMock->expects($this->once())
@@ -110,7 +110,7 @@ class UserManipulatorTest extends TestCase
 
     public function testDeactivateWithValidUsername()
     {
-        $userManagerMock = $this->getMockBuilder('FOS\UserBundle\Model\UserManagerInterface')->getMock();
+        $userManagerMock = $this->getMockBuilder('Mahefa\FOS\UserBundle\Model\UserManagerInterface')->getMock();
         $username = 'test_username';
 
         $user = new TestUser();
@@ -125,7 +125,7 @@ class UserManipulatorTest extends TestCase
         $userManagerMock->expects($this->once())
             ->method('updateUser')
             ->will($this->returnValue($user))
-            ->with($this->isInstanceOf('FOS\UserBundle\Tests\TestUser'));
+            ->with($this->isInstanceOf('Mahefa\FOS\UserBundle\Tests\TestUser'));
 
         $eventDispatcherMock = $this->getEventDispatcherMock(FOSUserEvents::USER_DEACTIVATED, true);
 
@@ -142,7 +142,7 @@ class UserManipulatorTest extends TestCase
     {
         $this->expectException(\InvalidArgumentException::class);
 
-        $userManagerMock = $this->getMockBuilder('FOS\UserBundle\Model\UserManagerInterface')->getMock();
+        $userManagerMock = $this->getMockBuilder('Mahefa\FOS\UserBundle\Model\UserManagerInterface')->getMock();
         $invalidusername = 'invalid_username';
 
         $userManagerMock->expects($this->once())
@@ -163,7 +163,7 @@ class UserManipulatorTest extends TestCase
 
     public function testPromoteWithValidUsername()
     {
-        $userManagerMock = $this->getMockBuilder('FOS\UserBundle\Model\UserManagerInterface')->getMock();
+        $userManagerMock = $this->getMockBuilder('Mahefa\FOS\UserBundle\Model\UserManagerInterface')->getMock();
         $username = 'test_username';
 
         $user = new TestUser();
@@ -178,7 +178,7 @@ class UserManipulatorTest extends TestCase
         $userManagerMock->expects($this->once())
             ->method('updateUser')
             ->will($this->returnValue($user))
-            ->with($this->isInstanceOf('FOS\UserBundle\Tests\TestUser'));
+            ->with($this->isInstanceOf('Mahefa\FOS\UserBundle\Tests\TestUser'));
 
         $eventDispatcherMock = $this->getEventDispatcherMock(FOSUserEvents::USER_PROMOTED, true);
 
@@ -195,7 +195,7 @@ class UserManipulatorTest extends TestCase
     {
         $this->expectException(\InvalidArgumentException::class);
 
-        $userManagerMock = $this->getMockBuilder('FOS\UserBundle\Model\UserManagerInterface')->getMock();
+        $userManagerMock = $this->getMockBuilder('Mahefa\FOS\UserBundle\Model\UserManagerInterface')->getMock();
         $invalidusername = 'invalid_username';
 
         $userManagerMock->expects($this->once())
@@ -216,7 +216,7 @@ class UserManipulatorTest extends TestCase
 
     public function testDemoteWithValidUsername()
     {
-        $userManagerMock = $this->getMockBuilder('FOS\UserBundle\Model\UserManagerInterface')->getMock();
+        $userManagerMock = $this->getMockBuilder('Mahefa\FOS\UserBundle\Model\UserManagerInterface')->getMock();
         $username = 'test_username';
 
         $user = new TestUser();
@@ -231,7 +231,7 @@ class UserManipulatorTest extends TestCase
         $userManagerMock->expects($this->once())
             ->method('updateUser')
             ->will($this->returnValue($user))
-            ->with($this->isInstanceOf('FOS\UserBundle\Tests\TestUser'));
+            ->with($this->isInstanceOf('Mahefa\FOS\UserBundle\Tests\TestUser'));
 
         $eventDispatcherMock = $this->getEventDispatcherMock(FOSUserEvents::USER_DEMOTED, true);
 
@@ -248,7 +248,7 @@ class UserManipulatorTest extends TestCase
     {
         $this->expectException(\InvalidArgumentException::class);
 
-        $userManagerMock = $this->getMockBuilder('FOS\UserBundle\Model\UserManagerInterface')->getMock();
+        $userManagerMock = $this->getMockBuilder('Mahefa\FOS\UserBundle\Model\UserManagerInterface')->getMock();
         $invalidusername = 'invalid_username';
 
         $userManagerMock->expects($this->once())
@@ -269,7 +269,7 @@ class UserManipulatorTest extends TestCase
 
     public function testChangePasswordWithValidUsername()
     {
-        $userManagerMock = $this->getMockBuilder('FOS\UserBundle\Model\UserManagerInterface')->getMock();
+        $userManagerMock = $this->getMockBuilder('Mahefa\FOS\UserBundle\Model\UserManagerInterface')->getMock();
 
         $user = new TestUser();
         $username = 'test_username';
@@ -287,7 +287,7 @@ class UserManipulatorTest extends TestCase
         $userManagerMock->expects($this->once())
             ->method('updateUser')
             ->will($this->returnValue($user))
-            ->with($this->isInstanceOf('FOS\UserBundle\Tests\TestUser'));
+            ->with($this->isInstanceOf('Mahefa\FOS\UserBundle\Tests\TestUser'));
 
         $eventDispatcherMock = $this->getEventDispatcherMock(FOSUserEvents::USER_PASSWORD_CHANGED, true);
 
@@ -304,7 +304,7 @@ class UserManipulatorTest extends TestCase
     {
         $this->expectException(\InvalidArgumentException::class);
 
-        $userManagerMock = $this->getMockBuilder('FOS\UserBundle\Model\UserManagerInterface')->getMock();
+        $userManagerMock = $this->getMockBuilder('Mahefa\FOS\UserBundle\Model\UserManagerInterface')->getMock();
 
         $invalidusername = 'invalid_username';
         $password = 'test_password';
@@ -327,7 +327,7 @@ class UserManipulatorTest extends TestCase
 
     public function testAddRole()
     {
-        $userManagerMock = $this->getMockBuilder('FOS\UserBundle\Model\UserManagerInterface')->getMock();
+        $userManagerMock = $this->getMockBuilder('Mahefa\FOS\UserBundle\Model\UserManagerInterface')->getMock();
         $username = 'test_username';
         $userRole = 'test_role';
         $user = new TestUser();
@@ -349,7 +349,7 @@ class UserManipulatorTest extends TestCase
 
     public function testRemoveRole()
     {
-        $userManagerMock = $this->getMockBuilder('FOS\UserBundle\Model\UserManagerInterface')->getMock();
+        $userManagerMock = $this->getMockBuilder('Mahefa\FOS\UserBundle\Model\UserManagerInterface')->getMock();
         $username = 'test_username';
         $userRole = 'test_role';
         $user = new TestUser();

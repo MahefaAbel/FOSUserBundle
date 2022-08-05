@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace FOS\UserBundle\DependencyInjection;
+namespace Mahefa\FOS\UserBundle\DependencyInjection;
 
-use FOS\UserBundle\Mailer\MailerInterface;
+use Mahefa\FOS\UserBundle\Mailer\MailerInterface;
 use Symfony\Component\Config\Definition\Processor;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\Alias;
@@ -41,7 +41,7 @@ class FOSUserExtension extends Extension
         'couchdb' => [
             'registry' => 'doctrine_couchdb',
             'tag' => 'doctrine_couchdb.event_subscriber',
-            'listener_class' => 'FOS\UserBundle\Doctrine\CouchDB\UserListener',
+            'listener_class' => 'Mahefa\FOS\UserBundle\Doctrine\CouchDB\UserListener',
         ],
     ];
 

@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace FOS\UserBundle\Mailer;
+namespace Mahefa\FOS\UserBundle\Mailer;
 
-use FOS\UserBundle\Model\UserInterface;
+use Mahefa\FOS\UserBundle\Model\UserInterface;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Twig\Environment;
 

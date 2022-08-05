@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace FOS\UserBundle\Tests\Command;
+namespace Mahefa\FOS\UserBundle\Tests\Command;
 
-use FOS\UserBundle\Command\CreateUserCommand;
-use FOS\UserBundle\Util\UserManipulator;
+use Mahefa\FOS\UserBundle\Command\CreateUserCommand;
+use Mahefa\FOS\UserBundle\Util\UserManipulator;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Console\Application;
 use Symfony\Component\Console\Tester\CommandTester;
@@ -90,7 +90,7 @@ class CreateUserCommandTest extends TestCase
      */
     private function getManipulator($username, $password, $email, $active, $superadmin)
     {
-        $manipulator = $this->getMockBuilder('FOS\UserBundle\Util\UserManipulator')
+        $manipulator = $this->getMockBuilder('Mahefa\FOS\UserBundle\Util\UserManipulator')
             ->disableOriginalConstructor()
             ->getMock();
 

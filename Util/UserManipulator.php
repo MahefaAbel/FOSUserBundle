@@ -9,13 +9,13 @@
  * file that was distributed with this source code.
  */
 
-namespace FOS\UserBundle\Util;
+namespace Mahefa\FOS\UserBundle\Util;
 
-use FOS\UserBundle\CompatibilityUtil;
-use FOS\UserBundle\Event\UserEvent;
-use FOS\UserBundle\FOSUserEvents;
-use FOS\UserBundle\Model\UserInterface;
-use FOS\UserBundle\Model\UserManagerInterface;
+use Mahefa\FOS\UserBundle\CompatibilityUtil;
+use Mahefa\FOS\UserBundle\Event\UserEvent;
+use Mahefa\FOS\UserBundle\FOSUserEvents;
+use Mahefa\FOS\UserBundle\Model\UserInterface;
+use Mahefa\FOS\UserBundle\Model\UserManagerInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <doctrine-mapping>
 
-    <mapped-superclass name="FOS\UserBundle\Model\User" indexed="true">
+    <mapped-superclass name="Mahefa\FOS\UserBundle\Model\User" indexed="true">
 
         <field name="username" fieldName="username" type="string" index="true" />
         <field name="usernameCanonical" fieldName="usernameCanonical" type="string" index="true" />

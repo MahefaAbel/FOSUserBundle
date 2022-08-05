@@ -6,19 +6,19 @@
 
     <services>
 
-        <service id="fos_user.profile.form.factory" class="FOS\UserBundle\Form\Factory\FormFactory">
+        <service id="fos_user.profile.form.factory" class="Mahefa\FOS\UserBundle\Form\Factory\FormFactory">
             <argument type="service" id="form.factory" />
             <argument>%fos_user.profile.form.name%</argument>
             <argument>%fos_user.profile.form.type%</argument>
             <argument>%fos_user.profile.form.validation_groups%</argument>
         </service>
 
-        <service id="fos_user.profile.form.type" class="FOS\UserBundle\Form\Type\ProfileFormType">
+        <service id="fos_user.profile.form.type" class="Mahefa\FOS\UserBundle\Form\Type\ProfileFormType">
             <argument>%fos_user.model.user.class%</argument>
             <tag name="form.type" alias="fos_user_profile" />
         </service>
 
-        <service id="fos_user.profile.controller" class="FOS\UserBundle\Controller\ProfileController" public="true">
+        <service id="fos_user.profile.controller" class="Mahefa\FOS\UserBundle\Controller\ProfileController" public="true">
             <argument type="service" id="event_dispatcher" />
             <argument type="service" id="fos_user.profile.form.factory" />
             <argument type="service" id="fos_user.user_manager" />
@@ -27,7 +27,7 @@
             </call>
         </service>
 
-        <service id="FOS\UserBundle\Controller\ProfileController" alias="fos_user.profile.controller" public="true" />
+        <service id="Mahefa\FOS\UserBundle\Controller\ProfileController" alias="fos_user.profile.controller" public="true" />
     </services>
 
 </container>

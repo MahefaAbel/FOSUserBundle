@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace FOS\UserBundle\Util;
+namespace Mahefa\FOS\UserBundle\Util;
 
-use FOS\UserBundle\Model\UserInterface;
+use Mahefa\FOS\UserBundle\Model\UserInterface;
 use Symfony\Component\PasswordHasher\Hasher\PasswordHasherFactoryInterface;
 use Symfony\Component\PasswordHasher\LegacyPasswordHasherInterface;
 

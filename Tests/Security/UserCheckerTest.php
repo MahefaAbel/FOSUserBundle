@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace FOS\UserBundle\Tests\Security;
+namespace Mahefa\FOS\UserBundle\Tests\Security;
 
-use FOS\UserBundle\Security\UserChecker;
+use Mahefa\FOS\UserBundle\Security\UserChecker;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Security\Core\Exception\DisabledException;
 
@@ -45,7 +45,7 @@ class UserCheckerTest extends TestCase
 
     private function getUser($isEnabled)
     {
-        $userMock = $this->getMockBuilder('FOS\UserBundle\Model\User')->getMock();
+        $userMock = $this->getMockBuilder('Mahefa\FOS\UserBundle\Model\User')->getMock();
         $userMock
             ->method('isEnabled')
             ->willReturn($isEnabled);

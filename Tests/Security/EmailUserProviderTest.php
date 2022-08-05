@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace FOS\UserBundle\Tests\Security;
+namespace Mahefa\FOS\UserBundle\Tests\Security;
 
-use FOS\UserBundle\Security\EmailUserProvider;
+use Mahefa\FOS\UserBundle\Security\EmailUserProvider;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Security\Core\Exception\UnsupportedUserException;
 use Symfony\Component\Security\Core\Exception\UsernameNotFoundException;
@@ -30,13 +30,13 @@ class EmailUserProviderTest extends TestCase
 
     protected function setUp(): void
     {
-        $this->userManager = $this->getMockBuilder('FOS\UserBundle\Model\UserManagerInterface')->getMock();
+        $this->userManager = $this->getMockBuilder('Mahefa\FOS\UserBundle\Model\UserManagerInterface')->getMock();
         $this->userProvider = new EmailUserProvider($this->userManager);
     }
 
     public function testLoadUserByUsername()
     {
-        $user = $this->getMockBuilder('FOS\UserBundle\Model\UserInterface')->getMock();
+        $user = $this->getMockBuilder('Mahefa\FOS\UserBundle\Model\UserInterface')->getMock();
         $this->userManager->expects($this->once())
             ->method('findUserByUsernameOrEmail')
             ->with('foobar')
@@ -59,7 +59,7 @@ class EmailUserProviderTest extends TestCase
 
     public function testRefreshUserBy()
     {
-        $user = $this->getMockBuilder('FOS\UserBundle\Model\User')
+        $user = $this->getMockBuilder('Mahefa\FOS\UserBundle\Model\User')
                     ->setMethods(['getId'])
                     ->getMock();
 
@@ -67,7 +67,7 @@ class EmailUserProviderTest extends TestCase
             ->method('getId')
             ->will($this->returnValue('123'));
 
-        $refreshedUser = $this->getMockBuilder('FOS\UserBundle\Model\UserInterface')->getMock();
+        $refreshedUser = $this->getMockBuilder('Mahefa\FOS\UserBundle\Model\UserInterface')->getMock();
         $this->userManager->expects($this->once())
             ->method('findUserBy')
             ->with(['id' => '123'])

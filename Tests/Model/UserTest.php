@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace FOS\UserBundle\Tests\Model;
+namespace Mahefa\FOS\UserBundle\Tests\Model;
 
-use FOS\UserBundle\Model\User;
+use Mahefa\FOS\UserBundle\Model\User;
 use PHPUnit\Framework\TestCase;
 
 class UserTest extends TestCase
@@ -83,7 +83,7 @@ class UserTest extends TestCase
     {
         $user = $this->getUser();
         $this->assertTrue($user->isEqualTo($user));
-        $this->assertFalse($user->isEqualTo($this->getMockBuilder('FOS\UserBundle\Model\UserInterface')->getMock()));
+        $this->assertFalse($user->isEqualTo($this->getMockBuilder('Mahefa\FOS\UserBundle\Model\UserInterface')->getMock()));
 
         $user2 = $this->getUser();
         $user2->setPassword('secret');
@@ -103,6 +103,6 @@ class UserTest extends TestCase
      */
     protected function getUser()
     {
-        return $this->getMockForAbstractClass('FOS\UserBundle\Model\User');
+        return $this->getMockForAbstractClass('Mahefa\FOS\UserBundle\Model\User');
     }
 }

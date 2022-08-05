@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-namespace FOS\UserBundle\EventListener;
+namespace Mahefa\FOS\UserBundle\EventListener;
 
-use FOS\UserBundle\Event\FormEvent;
-use FOS\UserBundle\FOSUserEvents;
-use FOS\UserBundle\Mailer\MailerInterface;
-use FOS\UserBundle\Util\TokenGeneratorInterface;
+use Mahefa\FOS\UserBundle\Event\FormEvent;
+use Mahefa\FOS\UserBundle\FOSUserEvents;
+use Mahefa\FOS\UserBundle\Mailer\MailerInterface;
+use Mahefa\FOS\UserBundle\Util\TokenGeneratorInterface;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
@@ -51,7 +51,7 @@ class EmailConfirmationListener implements EventSubscriberInterface
 
     public function onRegistrationSuccess(FormEvent $event)
     {
-        /** @var $user \FOS\UserBundle\Model\UserInterface */
+        /** @var $user \Mahefa\FOS\UserBundle\Model\UserInterface */
         $user = $event->getForm()->getData();
 
         $user->setEnabled(false);
