@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Mahefa\FOS\UserBundle\Util;
+namespace FOS\UserBundle\Util;
 
-use Mahefa\FOS\UserBundle\Model\UserInterface;
+use FOS\UserBundle\Model\UserInterface;
 
 /**
  * Class updating the canonical fields of the user.

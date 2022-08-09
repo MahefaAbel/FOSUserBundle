@@ -16,7 +16,7 @@
     </parameters>
 
     <services>
-        <service id="fos_user.mailer.twig_swift" class="Mahefa\FOS\UserBundle\Mailer\TwigSwiftMailer" public="false">
+        <service id="fos_user.mailer.twig_swift" class="FOS\UserBundle\Mailer\TwigSwiftMailer" public="false">
             <argument type="service" id="swiftmailer.mailer" />
             <argument type="service" id="router" />
             <argument type="service" id="twig" />
@@ -33,7 +33,7 @@
             <tag name="fos_user.requires_swift" />
         </service>
 
-        <service id="fos_user.mailer.noop" class="Mahefa\FOS\UserBundle\Mailer\NoopMailer" public="false" />
+        <service id="fos_user.mailer.noop" class="FOS\UserBundle\Mailer\NoopMailer" public="false" />
     </services>
 
 </container>

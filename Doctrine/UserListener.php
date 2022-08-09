@@ -9,16 +9,16 @@
  * file that was distributed with this source code.
  */
 
-namespace Mahefa\FOS\UserBundle\Doctrine;
+namespace FOS\UserBundle\Doctrine;
 
 use Doctrine\Common\EventSubscriber;
 use Doctrine\ODM\MongoDB\DocumentManager;
 use Doctrine\ORM\EntityManager;
 use Doctrine\Persistence\Event\LifecycleEventArgs;
 use Doctrine\Persistence\ObjectManager;
-use Mahefa\FOS\UserBundle\Model\UserInterface;
-use Mahefa\FOS\UserBundle\Util\CanonicalFieldsUpdater;
-use Mahefa\FOS\UserBundle\Util\PasswordUpdaterInterface;
+use FOS\UserBundle\Model\UserInterface;
+use FOS\UserBundle\Util\CanonicalFieldsUpdater;
+use FOS\UserBundle\Util\PasswordUpdaterInterface;
 
 /**
  * Doctrine listener updating the canonical username and password fields.

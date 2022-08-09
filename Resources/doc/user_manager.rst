@@ -2,19 +2,19 @@ About FOSUserBundle User Manager
 ================================
 
 In order to be storage agnostic, all operations on the user instances are
-handled by a user manager implementing ``Mahefa\FOS\UserBundle\Model\UserManagerInterface``.
+handled by a user manager implementing ``FOS\UserBundle\Model\UserManagerInterface``.
 Using it ensures that your code will continue to work if you change the storage.
 The controllers provided by the bundle use the configured user manager instead
 of interacting directly with the storage layer.
 
 If you configure the ``db_driver`` option to ``orm``, this service is an instance
-of ``Mahefa\FOS\UserBundle\Doctrine\UserManager``.
+of ``FOS\UserBundle\Doctrine\UserManager``.
 
 If you configure the ``db_driver`` option to ``mongodb``, this service is an
-instance of ``Mahefa\FOS\UserBundle\Doctrine\UserManager``.
+instance of ``FOS\UserBundle\Doctrine\UserManager``.
 
 If you configure the ``db_driver`` option to ``couchdb``, this service is an
-instance of ``Mahefa\FOS\UserBundle\Doctrine\UserManager``.
+instance of ``FOS\UserBundle\Doctrine\UserManager``.
 
 Accessing the User Manager service
 ----------------------------------
@@ -127,7 +127,7 @@ Overriding the User Manager
 ---------------------------
 
 You can replace the default implementation of the user manager by defining
-a service implementing ``Mahefa\FOS\UserBundle\Model\UserManagerInterface`` and
+a service implementing ``FOS\UserBundle\Model\UserManagerInterface`` and
 setting its id in the configuration.
 The id of the default implementation is ``fos_user.user_manager.default``
 
@@ -138,7 +138,7 @@ The id of the default implementation is ``fos_user.user_manager.default``
         service:
             user_manager: custom_user_manager_id
 
-Your custom implementation can extend ``Mahefa\FOS\UserBundle\Model\UserManager``
+Your custom implementation can extend ``FOS\UserBundle\Model\UserManager``
 to reuse the common logic.
 
 SecurityBundle integration
@@ -150,4 +150,4 @@ on top of the ``UserManagerInterface``.
 Although the built-in user managers also implement
 ``Symfony\Component\Security\Core\User\UserProviderInterface``, using the
 UserManager as user provider is deprecated and will tbe removed in future
-versions. Use ``Mahefa\FOS\UserBundle\Security\UserProvider`` instead.
+versions. Use ``FOS\UserBundle\Security\UserProvider`` instead.

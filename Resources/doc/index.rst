@@ -70,7 +70,7 @@ Enable the bundle in the kernel::
     {
         $bundles = array(
             // ...
-            new Mahefa\FOS\UserBundle\FOSUserBundle(),
+            new FOS\UserBundle\FOSUserBundle(),
             // ...
         );
     }
@@ -127,7 +127,7 @@ start:
 
         namespace AppBundle\Entity;
 
-        use Mahefa\FOS\UserBundle\Model\User as BaseUser;
+        use FOS\UserBundle\Model\User as BaseUser;
         use Doctrine\ORM\Mapping as ORM;
 
         /**
@@ -193,7 +193,7 @@ this to start::
 
     namespace AppBundle\Document;
 
-    use Mahefa\FOS\UserBundle\Model\User as BaseUser;
+    use FOS\UserBundle\Model\User as BaseUser;
     use Doctrine\ODM\MongoDB\Mapping\Annotations as MongoDB;
 
     /**
@@ -225,7 +225,7 @@ like this to start::
 
     namespace AppBundle\CouchDocument;
 
-    use Mahefa\FOS\UserBundle\Model\User as BaseUser;
+    use FOS\UserBundle\Model\User as BaseUser;
     use Doctrine\ODM\CouchDB\Mapping\Annotations as CouchDB;
 
     /**
@@ -261,7 +261,7 @@ in your application:
     # app/config/security.yml
     security:
         encoders:
-            Mahefa\FOS\UserBundle\Model\UserInterface: auto
+            FOS\UserBundle\Model\UserInterface: auto
 
         role_hierarchy:
             ROLE_ADMIN:       ROLE_USER

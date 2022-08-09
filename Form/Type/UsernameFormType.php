@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Mahefa\FOS\UserBundle\Form\Type;
+namespace FOS\UserBundle\Form\Type;
 
-use Mahefa\FOS\UserBundle\Form\DataTransformer\UserToUsernameTransformer;
+use FOS\UserBundle\Form\DataTransformer\UserToUsernameTransformer;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;

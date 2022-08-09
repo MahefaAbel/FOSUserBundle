@@ -8,9 +8,9 @@ provided by the bundle.
 Implementing a new storage layer requires providing two classes: the user
 implementation and the corresponding user manager.
 
-The user implementation must implement ``Mahefa\FOS\UserBundle\Model\UserInterface``
-and the user manager must implement ``Mahefa\FOS\UserBundle\Model\UserManagerInterface``.
-The ``Mahefa\FOS\UserBundle\Model`` namespace provides base classes to make it easier to
+The user implementation must implement ``FOS\UserBundle\Model\UserInterface``
+and the user manager must implement ``FOS\UserBundle\Model\UserManagerInterface``.
+The ``FOS\UserBundle\Model`` namespace provides base classes to make it easier to
 implement these interfaces.
 
 .. note::

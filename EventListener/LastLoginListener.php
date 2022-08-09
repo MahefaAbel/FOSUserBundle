@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Mahefa\FOS\UserBundle\EventListener;
+namespace FOS\UserBundle\EventListener;
 
-use Mahefa\FOS\UserBundle\Event\UserEvent;
-use Mahefa\FOS\UserBundle\FOSUserEvents;
-use Mahefa\FOS\UserBundle\Model\UserInterface;
-use Mahefa\FOS\UserBundle\Model\UserManagerInterface;
+use FOS\UserBundle\Event\UserEvent;
+use FOS\UserBundle\FOSUserEvents;
+use FOS\UserBundle\Model\UserInterface;
+use FOS\UserBundle\Model\UserManagerInterface;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\Security\Http\Event\InteractiveLoginEvent;
 use Symfony\Component\Security\Http\SecurityEvents;

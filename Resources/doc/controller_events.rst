@@ -8,7 +8,7 @@ specific needs of your application.
 
 For this purpose, the controllers are dispatching events in many places in
 their logic. All events can be found in the constants of the
-``Mahefa\FOS\UserBundle\FOSUserEvents`` class.
+``FOS\UserBundle\FOSUserEvents`` class.
 
 All controllers follow the same convention: they dispatch a ``SUCCESS`` event
 when the form is valid before saving the user, and a ``COMPLETED`` event when
@@ -26,8 +26,8 @@ resetting to go to the homepage instead of the profile::
 
     namespace Acme\UserBundle\EventListener;
 
-    use Mahefa\FOS\UserBundle\FOSUserEvents;
-    use Mahefa\FOS\UserBundle\Event\FormEvent;
+    use FOS\UserBundle\FOSUserEvents;
+    use FOS\UserBundle\Event\FormEvent;
     use Symfony\Component\EventDispatcher\EventSubscriberInterface;
     use Symfony\Component\HttpFoundation\RedirectResponse;
     use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
@@ -89,7 +89,7 @@ Registration success listener with enabled confirmation at the same time
 
 When you have registration confirmation and you want to hook up to
 ``FOSUserEvents::REGISTRATION_SUCCESS`` event you will have to prioritize this listener to be called
-before ``Mahefa\FOS\UserBundle\EventListener\EmailConfirmationListener::onRegistrationSuccess``::
+before ``FOS\UserBundle\EventListener\EmailConfirmationListener::onRegistrationSuccess``::
 
     public static function getSubscribedEvents()
     {

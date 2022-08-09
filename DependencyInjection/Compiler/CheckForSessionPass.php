@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Mahefa\FOS\UserBundle\DependencyInjection\Compiler;
+namespace FOS\UserBundle\DependencyInjection\Compiler;
 
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;

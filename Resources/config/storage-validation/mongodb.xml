@@ -4,7 +4,7 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/constraint-mapping
         http://symfony.com/schema/dic/constraint-mapping/constraint-mapping-1.0.xsd">
 
-    <class name="Mahefa\FOS\UserBundle\Model\User">
+    <class name="FOS\UserBundle\Model\User">
         <constraint name="Doctrine\Bundle\MongoDBBundle\Validator\Constraints\Unique">
             <option name="fields">usernameCanonical</option>
             <option name="errorPath">username</option>

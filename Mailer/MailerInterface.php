@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Mahefa\FOS\UserBundle\Mailer;
+namespace FOS\UserBundle\Mailer;
 
-use Mahefa\FOS\UserBundle\Model\UserInterface;
+use FOS\UserBundle\Model\UserInterface;
 
 /**
  * @author Thibault Duplessis <thibault.duplessis@gmail.com>

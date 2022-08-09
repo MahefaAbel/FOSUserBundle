@@ -171,16 +171,16 @@ library to send mail. If you would like to use a different library to send
 emails, want to send HTML emails or simply change the content of the email you
 may do so by defining your own service.
 
-First you must create a new class which implements ``Mahefa\FOS\UserBundle\Mailer\MailerInterface``
+First you must create a new class which implements ``FOS\UserBundle\Mailer\MailerInterface``
 which is listed below.
 
 .. code-block:: php
 
     <?php
 
-    namespace Mahefa\FOS\UserBundle\Mailer;
+    namespace FOS\UserBundle\Mailer;
 
-    use Mahefa\FOS\UserBundle\Model\UserInterface;
+    use FOS\UserBundle\Model\UserInterface;
 
     /**
      * @author Thibault Duplessis <thibault.duplessis@gmail.com>

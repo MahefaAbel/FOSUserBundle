@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Mahefa\FOS\UserBundle\EventListener;
+namespace FOS\UserBundle\EventListener;
 
-use Mahefa\FOS\UserBundle\FOSUserEvents;
+use FOS\UserBundle\FOSUserEvents;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\HttpFoundation\Session\Session;

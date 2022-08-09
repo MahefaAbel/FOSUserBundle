@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Mahefa\FOS\UserBundle\DependencyInjection;
+namespace FOS\UserBundle\DependencyInjection;
 
-use Mahefa\FOS\UserBundle\Form\Type;
+use FOS\UserBundle\Form\Type;
 use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

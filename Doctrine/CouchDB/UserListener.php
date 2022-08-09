@@ -9,14 +9,14 @@
  * file that was distributed with this source code.
  */
 
-namespace Mahefa\FOS\UserBundle\Doctrine\CouchDB;
+namespace FOS\UserBundle\Doctrine\CouchDB;
 
 use Doctrine\Common\EventSubscriber;
 use Doctrine\ODM\CouchDB\Event;
 use Doctrine\ODM\CouchDB\Event\LifecycleEventArgs;
-use Mahefa\FOS\UserBundle\Model\UserInterface;
-use Mahefa\FOS\UserBundle\Util\CanonicalFieldsUpdater;
-use Mahefa\FOS\UserBundle\Util\PasswordUpdaterInterface;
+use FOS\UserBundle\Model\UserInterface;
+use FOS\UserBundle\Util\CanonicalFieldsUpdater;
+use FOS\UserBundle\Util\PasswordUpdaterInterface;
 
 /**
  * @internal

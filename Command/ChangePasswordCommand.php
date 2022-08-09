@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Mahefa\FOS\UserBundle\Command;
+namespace FOS\UserBundle\Command;
 
-use Mahefa\FOS\UserBundle\Util\UserManipulator;
+use FOS\UserBundle\Util\UserManipulator;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;

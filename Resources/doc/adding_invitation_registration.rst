@@ -79,7 +79,7 @@ Next we map our ``Invitation`` entity to our ``User`` with a one-to-one associat
     use Symfony\Component\Validator\Constraints as Assert;
 
     /** @ORM\Entity */
-    class User extends \Mahefa\FOS\UserBundle\Model\User
+    class User extends \FOS\UserBundle\Model\User
     {
         /** @ORM\Id @ORM\Column(type="integer") @ORM\GeneratedValue(strategy="AUTO") */
         protected $id;
@@ -112,7 +112,7 @@ Override the default registration form with your own::
 
     namespace AppBundle\Form;
 
-    use Mahefa\FOS\UserBundle\Form\Type\RegistrationFormType;
+    use FOS\UserBundle\Form\Type\RegistrationFormType;
     use Symfony\Component\Form\AbstractType;
     use Symfony\Component\Form\FormBuilderInterface;
 

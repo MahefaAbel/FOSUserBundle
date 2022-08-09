@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Mahefa\FOS\UserBundle;
+namespace FOS\UserBundle;
 
 use Symfony\Component\EventDispatcher\GenericEvent;
 use Symfony\Component\EventDispatcher\LegacyEventDispatcherProxy;

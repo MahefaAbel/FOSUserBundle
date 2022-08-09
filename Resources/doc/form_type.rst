@@ -9,7 +9,7 @@ instance::
     {
         public function buildForm(FormBuilderInterface $builder, array $options)
         {
-            $builder->add('recipient', 'Mahefa\FOS\UserBundle\Form\Type\UsernameFormType');
+            $builder->add('recipient', 'FOS\UserBundle\Form\Type\UsernameFormType');
         }
     }
 

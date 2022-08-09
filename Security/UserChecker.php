@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Mahefa\FOS\UserBundle\Security;
+namespace FOS\UserBundle\Security;
 
 use Symfony\Component\Security\Core\Exception\DisabledException;
 use Symfony\Component\Security\Core\User\UserCheckerInterface;

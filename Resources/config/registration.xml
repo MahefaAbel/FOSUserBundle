@@ -6,19 +6,19 @@
 
     <services>
 
-        <service id="fos_user.registration.form.factory" class="Mahefa\FOS\UserBundle\Form\Factory\FormFactory">
+        <service id="fos_user.registration.form.factory" class="FOS\UserBundle\Form\Factory\FormFactory">
             <argument type="service" id="form.factory" />
             <argument>%fos_user.registration.form.name%</argument>
             <argument>%fos_user.registration.form.type%</argument>
             <argument>%fos_user.registration.form.validation_groups%</argument>
         </service>
 
-        <service id="fos_user.registration.form.type" class="Mahefa\FOS\UserBundle\Form\Type\RegistrationFormType">
+        <service id="fos_user.registration.form.type" class="FOS\UserBundle\Form\Type\RegistrationFormType">
             <tag name="form.type" alias="fos_user_registration" />
             <argument>%fos_user.model.user.class%</argument>
         </service>
 
-        <service id="fos_user.registration.controller" class="Mahefa\FOS\UserBundle\Controller\RegistrationController" public="true">
+        <service id="fos_user.registration.controller" class="FOS\UserBundle\Controller\RegistrationController" public="true">
             <argument type="service" id="event_dispatcher" />
             <argument type="service" id="fos_user.registration.form.factory" />
             <argument type="service" id="fos_user.user_manager" />
@@ -28,7 +28,7 @@
             </call>
         </service>
 
-        <service id="Mahefa\FOS\UserBundle\Controller\RegistrationController" alias="fos_user.registration.controller" public="true" />
+        <service id="FOS\UserBundle\Controller\RegistrationController" alias="fos_user.registration.controller" public="true" />
     </services>
 
 </container>

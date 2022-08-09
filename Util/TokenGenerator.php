@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Mahefa\FOS\UserBundle\Util;
+namespace FOS\UserBundle\Util;
 
 class TokenGenerator implements TokenGeneratorInterface
 {

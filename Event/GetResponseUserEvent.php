@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Mahefa\FOS\UserBundle\Event;
+namespace FOS\UserBundle\Event;
 
 use Symfony\Component\HttpFoundation\Response;
 

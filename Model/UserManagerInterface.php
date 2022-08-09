@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Mahefa\FOS\UserBundle\Model;
+namespace FOS\UserBundle\Model;
 
 /**
  * Interface to be implemented by user managers. This adds an additional level

@@ -9,13 +9,13 @@
  * file that was distributed with this source code.
  */
 
-namespace Mahefa\FOS\UserBundle\EventListener;
+namespace FOS\UserBundle\EventListener;
 
-use Mahefa\FOS\UserBundle\CompatibilityUtil;
-use Mahefa\FOS\UserBundle\Event\FilterUserResponseEvent;
-use Mahefa\FOS\UserBundle\Event\UserEvent;
-use Mahefa\FOS\UserBundle\FOSUserEvents;
-use Mahefa\FOS\UserBundle\Security\LoginManagerInterface;
+use FOS\UserBundle\CompatibilityUtil;
+use FOS\UserBundle\Event\FilterUserResponseEvent;
+use FOS\UserBundle\Event\UserEvent;
+use FOS\UserBundle\FOSUserEvents;
+use FOS\UserBundle\Security\LoginManagerInterface;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\Security\Core\Exception\AccountStatusException;
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;

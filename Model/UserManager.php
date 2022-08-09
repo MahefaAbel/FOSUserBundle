@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Mahefa\FOS\UserBundle\Model;
+namespace FOS\UserBundle\Model;
 
-use Mahefa\FOS\UserBundle\Util\CanonicalFieldsUpdater;
-use Mahefa\FOS\UserBundle\Util\PasswordUpdaterInterface;
+use FOS\UserBundle\Util\CanonicalFieldsUpdater;
+use FOS\UserBundle\Util\PasswordUpdaterInterface;
 
 /**
  * Abstract User Manager implementation which can be used as base class for your

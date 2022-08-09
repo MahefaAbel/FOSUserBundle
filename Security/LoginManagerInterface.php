@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Mahefa\FOS\UserBundle\Security;
+namespace FOS\UserBundle\Security;
 
-use Mahefa\FOS\UserBundle\Model\UserInterface;
+use FOS\UserBundle\Model\UserInterface;
 use Symfony\Component\HttpFoundation\Response;
 
 interface LoginManagerInterface

@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Mahefa\FOS\UserBundle\Form\DataTransformer;
+namespace FOS\UserBundle\Form\DataTransformer;
 
-use Mahefa\FOS\UserBundle\Model\UserInterface;
-use Mahefa\FOS\UserBundle\Model\UserManagerInterface;
+use FOS\UserBundle\Model\UserInterface;
+use FOS\UserBundle\Model\UserManagerInterface;
 use Symfony\Component\Form\DataTransformerInterface;
 use Symfony\Component\Form\Exception\UnexpectedTypeException;
 
@@ -54,7 +54,7 @@ class UserToUsernameTransformer implements DataTransformerInterface
         }
 
         if (!$value instanceof UserInterface) {
-            throw new UnexpectedTypeException($value, 'Mahefa\FOS\UserBundle\Model\UserInterface');
+            throw new UnexpectedTypeException($value, 'FOS\UserBundle\Model\UserInterface');
         }
 
         return $value->getUsername();
